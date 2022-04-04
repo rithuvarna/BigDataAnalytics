@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 data = pd.read_csv("Ecommerce_Customers.csv")
-columns = ["Email","Address","Avatar","Avg Session Length","Time on App","Time on Website","Length of Membership","Yearly Amount Spent"]
+columns = [["Email","Address","Avatar","Avg Session Length","Time on App","Time on Website","Length of Membership","Yearly Amount Spent"]]
 data = pd.read_table("Ecommerce_Customers.csv", sep=',', header=None, names=columns)
 X = data['Avg Session Length', 'Time on App','Time on Website', 'Length of Membership']
 y = data['Yearly Amount Spent']
